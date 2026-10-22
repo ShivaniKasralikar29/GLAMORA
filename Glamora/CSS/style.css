@@ -1,0 +1,245 @@
+/* CSS */
+body{
+    background-color: pink;
+}
+
+
+/* =====================================================
+            RESPONSIVE CSS FOR GLAMORA
+===================================================== */
+
+
+/* Large Tablets / Small Laptops */
+@media (max-width: 992px) {
+
+    /* Navbar */
+    .navbar .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Hero */
+    .hero {
+        aspect-ratio: 16 / 9;
+        min-height: 500px;
+    }
+
+    .hero h1 {
+        font-size: 45px !important;
+    }
+
+    /* Category Cards */
+    #categories .col-3 {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    /* Product Cards */
+    #products .col-3 {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    /* About Video */
+    .about-video {
+        height: 500px !important;
+    }
+}
+
+
+/* Tablets / Mobile */
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar .nav {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar .nav-link {
+        padding: 8px 10px;
+    }
+
+
+    /* Hero */
+    .hero {
+        min-height: 500px;
+        aspect-ratio: auto;
+    }
+
+    .background-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .hero-content {
+        padding: 20px;
+        align-items: center !important;
+    }
+
+    .hero h1 {
+        font-size: 38px !important;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+
+    /* Categories */
+    #categories .col-3 {
+        width: 50%;
+    }
+
+    #categories .card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+
+    /* Products */
+    #products .col-3 {
+        width: 50%;
+    }
+
+    #products .card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+
+    /* Search */
+    #search {
+        width: 100%;
+    }
+
+
+    /* Offer */
+    .offer .col-8,
+    .offer .col-lg-4 {
+        width: 100%;
+        text-align: center !important;
+    }
+
+    .offer h2 {
+        font-size: 25px;
+    }
+
+    .offer button {
+        margin-top: 20px;
+    }
+
+
+    /* About Video */
+    .about-video {
+        width: 100% !important;
+        height: 400px !important;
+        object-fit: cover;
+    }
+
+
+    /* Contact */
+    #contact .col-lg-4,
+    #contact .col-lg-7 {
+        width: 100%;
+    }
+
+}
+
+
+/* Mobile Phones */
+@media (max-width: 576px) {
+
+    /* Navbar */
+    .navbar .nav {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar .nav-link {
+        padding: 6px;
+    }
+
+
+    /* Hero */
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero h1 {
+        font-size: 30px !important;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .hero .btn {
+        font-size: 14px;
+    }
+
+
+    /* Categories - 1 card per row */
+    #categories .col-3 {
+        width: 100%;
+    }
+
+    #categories .card img {
+        height: 250px;
+    }
+
+
+    /* Products - 1 card per row */
+    #products .col-3 {
+        width: 100%;
+    }
+
+    #products .card img {
+        height: 280px;
+    }
+
+
+    /* Section Padding */
+    #categories,
+    #products {
+        padding: 30px 15px !important;
+    }
+
+
+    /* Headings */
+    h2 {
+        font-size: 26px;
+    }
+
+
+    /* About Video */
+    .about-video {
+        height: 280px !important;
+    }
+
+
+    /* Contact */
+    .contact-info {
+        padding: 25px !important;
+    }
+
+    #contact .card-body {
+        padding: 25px !important;
+    }
+
+
+    /* Footer */
+    footer {
+        font-size: 14px;
+    }
+
+}
