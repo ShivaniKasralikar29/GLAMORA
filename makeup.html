@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLAMORA - Beauty Store</title>
+ 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="CSS/style.css"/>
+
+    <script src="JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<!-- Navbar -->
+  <nav class="navbar d-flex justify-content-between align-items-centerp-2" style="background-color: black; ">
+    <a href="" class="navbar-brand fs-4 fw-bold p-2" style="color: rgb(209, 76, 121);">💄GLAMORA</a>
+
+    <ul class="nav">
+
+    <li><a class="nav-link text-light" href="home.html">HOME</a></li>
+    <li><a class="nav-link text-light" href="category.html">CATEGORIES</a></li>
+    <li><a class="nav-link text-light" href="makeup.html">MAKEUP</a></li>
+    <li><a class="nav-link text-light" href="about.html">ABOUT</a></li>
+    <li><a class="nav-link text-light" href="contact.html">CONTACT</a></li>
+    <button class="btn btn-danger me-3"
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#shoppingCart">
+    🛒 Cart (<span id="cartCount">0</span>)
+    </button>
+    </ul> 
+  </nav> 
+    
+
+
+
+  
+<!-- MAKEUP PAGE -->
+
+  <section id="products" class="p-5 mt-5 ">
+
+    <div class="container">
+    <div class="text-center mb-4">
+
+      <h4 class="text-danger fw-bold">OUR PRODUCTS</h4>
+      <h2 class="fw-bold">Best Beauty Picks</h2>
+      <p class="text-dark"> Discover products designed to help you express your style, enhance your natural beauty, and feel confident every day.</p>
+
+
+    </div>
+
+
+    
+    <!-- Lipstick card -->
+
+    <div class="row">
+    <div class="col-3" >
+      <div class="card shadow">
+      <img src="IMAGES/Lipstick.jpg" height="auto" width="auto" alt="lipstick">
+        <div class="card-body ">
+          <button class=" badge btn btn-danger">Bestseller</button>
+          <h4 class="card-title">Matte Lipstick</h4>
+          <p>Long-lasting smooth finish.</p>
+          <h5>₹399</h5>
+          <button type="button" class="btn btn-danger w-100" data-bs-toggle="modal"  data-bs-target="#cartPopup"> Add To Cart </button>
+        </div>
+      </div>
+     </div>
+
+     <!-- Highlighter Card -->
+     <div class="col-3">
+      <div class="card shadow">
+      <img src="IMAGES/Highlighter.jpg" height="auto" width="auto" alt="lipstick">
+        <div class="card-body">
+          <button class=" badge btn btn-warning">Popolar</button>
+          <h4 class="card-title">Glow HIghlighter</h4>
+          <p>Adds a radient shimmer to your skin.</p>
+          <h5>₹499</h5>
+          <button type="button" class="btn btn-danger w-100" data-bs-toggle="modal"  data-bs-target="#cartPopup"> Add To Cart </button>
+        </div>
+      </div>
+     </div>
+
+     <!-- Foundation Card-->
+     <div class="col-3">
+      <div class="card shadow">
+      <img src="IMAGES/Foundation.jpg" height="auto" width="auto" alt="lipstick">
+        <div class="card-body">
+          <button class=" badge btn btn-success">New</button>
+          <h4 class="card-title">Glow Foundation</h4>
+          <p>Natural and radiant finish.</p>
+          <h5>₹599</h5>
+          <button type="button" class="btn btn-danger w-100" data-bs-toggle="modal"  data-bs-target="#cartPopup"> Add To Cart </button>
+        </div>
+      </div>
+     </div>
+
+     <!-- Compact Card -->
+     <div class="col-3">
+      <div class="card shadow">
+      <img src="IMAGES/Compact.jpg" height="auto" width="auto" alt="lipstick">
+        <div class="card-body">
+          <button class=" badge btn btn-primary">Sale</button>
+          <h4 class="card-title">Compact Powder</h4>
+          <p>Smooth, lightweight matte finish.</p>
+          <h5>₹299</h5>
+          <button type="button" class="btn btn-danger w-100" data-bs-toggle="modal"  data-bs-target="#cartPopup"> Add To Cart </button>
+        </div>
+      </div>
+     </div>
+
+     <div class="mt-5"></div>
+
+     <!-- Blush Card -->
+     <div class="col-3">
+      <div class="card shadow">
+      <img src="IMAGES/Blush.jpg" height="auto" width="auto" alt="lipstick">
+        <div class="card-body">
+          <button class=" badge btn btn-danger">Bestseller</button>
+          <h4 class="card-title">Liquid Blush</h4>
+          <p>Natural rosy color with a dewy glow.</p>
+          <h5>₹499</h5>
+          <button type="button" class="btn btn-danger w-100" data-bs-toggle="modal"  data-bs-target="#cartPopup"> Add To Cart </button>
+        </div>
+      </div>
+     </div>
+
+     <!-- Moisturizer Card -->
+     <div class="col-3">
+      <div class="card shadow">
+      <img src="IMAGES/Moisturizer.jpg" height="auto" width="auto" alt="lipstick">
+        <div class="card-body">
+          <button class=" badge btn btn-warning">Popular</button>
+          <h4 class="card-title">Hydrating Moisturizer</h4>
+          <p>Daily hydrates for soft,smooth skin.</p>
+          <h5>₹599</h5>
+          <button type="button" class="btn btn-danger w-100" data-bs-toggle="modal"  data-bs-target="#cartPopup"> Add To Cart </button>
+        </div>
+      </div>
+    </div>
+
+     <!-- Eyeliner Card -->
+     <div class="col-3">
+      <div class="card shadow">
+      <img src="IMAGES/Eyeliner.jpg" height="auto" width="auto" alt="lipstick">
+        <div class="card-body">
+          <button class=" badge btn btn-success">New</button>
+          <h4 class="card-title">Eyeliner</h4>
+          <p>Precise lines with a defined look.</p>
+          <h5>₹299</h5>
+          <button type="button" class="btn btn-danger w-100" data-bs-toggle="modal"  data-bs-target="#cartPopup"> Add To Cart </button>
+        </div>
+      </div>
+     </div>
+
+     <!-- Makeup kit card -->
+     <div class="col-3">
+      <div class="card shadow">
+      <img src="IMAGES/Makeupkit.jpg" height="auto" width="auto" alt="lipstick">
+        <div class="card-body">
+          <button class=" badge btn btn-primary">Sale</button>
+          <h4 class="card-title">Makeup Kit</h4>
+          <p>Complete everyday makeup kit.</p>
+          <h5>₹1,299</h5>
+          <button type="button" class="btn btn-danger w-100" data-bs-toggle="modal"  data-bs-target="#cartPopup"> Add To Cart </button>
+        </div>
+      </div>
+     </div>
+    </div>
+  </section>
+
+
+
+<!-- OFFER SECTION -->
+
+<section class="p-5">
+
+  <div class="container" style="background-color: rgb(235, 86, 136); border-radius: 25px;">
+
+  <div class="offer p-5 p-md-5 ">
+  <div class="row align-items-center">
+  <div class="col-8">
+
+  <p class="fw-bold text-light"> SPECIAL OFFER </p>
+
+  <h2 class="fw-bold text-light"> Get 20% Off Your First Order ✨ </h2>
+
+  <h5> Discover your new beauty favorites today.</h5>
+  </div>
+
+
+  <div class="col-lg-4 text-lg-end">
+
+ <button type="button" class="btn btn-light"  data-bs-toggle="modal"  data-bs-target="#offerPopup">OFFER
+</button>
+  </div>
+  </div>
+  </div>
+  </div>
+
+</section>
+
+
+
+<!-- ADD TO CART POPUP -->
+
+<div class="modal fade glamora-modal"
+     id="cartPopup"
+     tabindex="-1">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    GLAMORA Shopping Bag 🛍️
+                </h5>
+
+                <button type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body text-center">
+
+                <div class="popup-icon">
+                    🛒
+                </div>
+
+                <h4>Added to Your Cart!</h4>
+
+                <p class="popup-message">
+                    Your beauty product has been
+                    successfully added to your shopping bag.
+                </p>
+
+            </div>
+
+            <div class="modal-footer justify-content-center">
+
+                <button type="button"
+                        class="btn btn-danger popup-btn"
+                        data-bs-dismiss="modal">
+                    Continue Shopping 
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<!-- OFFER SECTION POPUP -->
+
+<div class="modal fade" id="offerPopup" tabindex="-1">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    🥳 GLAMORA SPECIAL OFFER
+                </h5>
+
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+            </div>
+
+            <div class="modal-body text-center">
+
+                <h1>🎁</h1>
+
+                <h3>Beauty Deals Are Here!</h3>
+
+                <p>
+                    Discover your favourite makeup and
+                    skincare products at special prices.
+                </p>
+
+                <h5>✨ Shop More, Glow More! ✨</h5>
+
+            </div>
+
+            <div class="modal-footer justify-content-center">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 w-100 mt-5">
+
+    <h4>💄 GLAMORA</h4>
+
+    <p class="mb-2">
+        Beauty • Glow • Confidence
+    </p>
+
+    <p class="mb-0">
+        © 2026 Glamora. All Rights Reserved.
+    </p>
+
+    </footer>
+
+
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
